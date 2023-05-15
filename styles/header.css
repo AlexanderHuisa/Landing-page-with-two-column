@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap');
+:root{
+    --font-principal: 'Raleway', sans-serif;
+    --font-secundario: 'Open Sans', sans-serif;
+    --blue: blue;
+    --white: white;
+    --dark: black;
+}
+
+.hero{
+    max-width: 1440px;
+    margin: 50px auto;
+    padding: 0 2%;
+    height: 50px;
+    display: flex;
+    /* place-content:center space-between; */
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+}
+.hero-nav ul{
+    display: flex;
+    width: 100%;
+    gap: 4em;
+    /* background-color: yellow; */
+}
+.hero-nav ul li{
+    list-style: none;
+}
+.hero-nav ul li a{
+    color: var(--dark);
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-family: var(--font-principal);
+}
