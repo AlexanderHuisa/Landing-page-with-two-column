@@ -2,15 +2,14 @@
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 2%;
-    background-color: red;
-
+}
 .main-section1{
     display: grid;
     width: 100%;
     grid-template-columns: repeat(2,47.5%);
     grid-auto-rows: auto;
     height: calc(100vh - 150px);
-    background-color: red;
+    /* background-color: red; */
     justify-content: center;
     align-items: center;
     gap: 5%;
@@ -21,6 +20,7 @@
     font-family: var(--font-secundario);
     font-weight: 600;
     margin-bottom: 2rem;
+    line-height: 60px;
 }
 
 .main-section1_info p{
@@ -28,6 +28,7 @@
     text-align: justify;
     font-size: 1.2rem;
     padding: 0 1.5rem 2rem 0;
+    line-height: 30px;
 }
 
 .input-text{
@@ -54,10 +55,81 @@
     height:100%;
     object-fit: contain;
 }
-
-
 @media screen and (max-width: 1316px){
-    .main{
-        background-color: blue;
+
+    .input-text{
+        margin-bottom: 20px;
+    }
+
+    .input-button{
+        margin: 0rem;
+        padding: 0.95rem 4rem;
+        width: 24.5rem;
+    }
+
+}
+
+@media screen and (max-width: 928px){
+    .main-section1{
+        height: 70rem;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "top"
+            "bottom"
+        ;
+        gap: 0;
+
+    }
+    .main-section1_info{
+        grid-area: bottom;
+        text-align: center;
+    }
+    .main-section1_info-input{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-section1_info p{
+        text-align: center;
+        /* font-size: 1rem; */
+        padding: 0 0.5rem;
+        margin-bottom: 3rem;
+    }
+
+}
+
+@media screen and (max-width: 490px){
+    .main-section1{
+        height: 50rem;
+    }
+    .main-section1_info-tittle{
+        font-size: 1.8rem;
+        font-weight:bolder;
+        margin-bottom: 3rem;
+        line-height: 40px;
+    }
+    
+    .main-section1_info p{
+        text-align: center;
+        font-size: 1rem;
+        padding: 0 0.5rem;
+        margin-bottom: 3rem;
+        line-height: 20px;
     }
 }
+
+@media screen and (max-width: 417px){
+    .input-text{
+        width: 20rem;
+        height: 2.5rem;
+    }
+    
+    .input-button{
+        padding: 0.95rem 0rem;
+        width: 20.5rem;
+    }
+    .main-section1{
+        height: 50rem;
+    }
+}    

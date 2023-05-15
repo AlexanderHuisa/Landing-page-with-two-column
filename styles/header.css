@@ -33,3 +33,35 @@
     text-decoration: none;
     font-family: var(--font-principal);
 }
+
+@media screen and (max-width: 690px){
+   
+    .hero-nav ul li a{
+        font-size: 1.2rem;
+    }
+    .hero-img{
+        width: 110px;
+        height: 40px;
+    }
+    .hero-nav ul{
+        gap: 2em;
+    }
+    
+}
+
+@media screen and (max-width: 490px){
+    .hero{
+        margin: 20px auto;
+    }
+    
+    .hero-nav ul li a{
+        font-size: 1rem;
+    }
+    .hero-img{
+        width: 90px;
+        height: 30px;
+    }
+    .hero-nav ul{
+        gap: 0.9em;
+    }
+}
