@@ -1,0 +1,97 @@
+.main-section3{
+    display: flex;
+    height: 20rem;
+    align-items: center;
+    padding: 0 2%;
+    background-color: var(--dark-silver);
+    gap: 10%;
+}
+.main-section3_info{
+    width: 50%;
+    color: var(--white);
+    font-family: var(--font-secundario);
+    line-height: 2.5em;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.main-section3_info p{
+    color:  var(--silver-text);
+    line-height: 1.5em;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+.main-section3_input{
+    width: 40%;
+    line-height: 4em;
+}
+
+.main-section3_input-button{
+    margin: 0;
+}
+
+.main-section3_input-text{
+    width: 99%;
+}
+
+@media screen and (max-width: 1316px){
+
+    .main-section3_input-button{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 928px){
+
+    .main-section3{
+        height: 30rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 10%;
+    }
+
+    .main-section3_info{
+        width: 100%;
+        text-align: center;
+    }
+    .main-section3_input-button{
+        width: 24.5rem;
+    }
+    .main-section3_input-text{
+        width: 24rem;
+    }
+    .main-section3_input{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-section3{
+        height: 30rem;
+        justify-content: center;
+    }
+
+}
+@media screen and (max-width: 490px){
+    
+    .main-section3_info{
+        font-size: 1.8rem;
+    }
+    
+    .main-section3_info p{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 417px){
+   
+    .main-section3_input-text{
+        width: 20rem;
+        height: 2.5rem;
+    }
+    .main-section3_input-button{
+        padding: 0.95rem 0rem;
+        width: 20.5rem;
+    }
+ 
+} 

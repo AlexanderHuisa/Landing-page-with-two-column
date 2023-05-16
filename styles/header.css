@@ -9,6 +9,7 @@
     --silver: #F9F8FE;
     --dark-silver: #575989;
     --green: #51998D;
+    --silver-text:#A5A9BC;
 }
 
 .hero{
@@ -20,7 +21,7 @@
     /* place-content:center space-between; */
     justify-content: space-between;
     align-items: center;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 .hero-img{
     padding-left: 2%;
